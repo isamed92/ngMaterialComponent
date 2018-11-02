@@ -6,7 +6,8 @@ import 'hammerjs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule } from '@angular/forms';
-import { MatInputModule, MatButtonModule, MatDialogModule, MatCardModule, MatTooltipModule, MatSnackBarModule } from '@angular/material';
+import { MatInputModule, MatButtonModule, MatDialogModule, MatCardModule, MatToolbarModule} from '@angular/material';
+import { MatTooltipModule, MatSnackBarModule, MatMenuModule, MatIconModule, MatSidenavModule} from '@angular/material';
 
 
 import { AppComponent } from './app.component';
@@ -15,6 +16,9 @@ import { DialogDemoComponent } from './dialog-demo/dialog-demo.component';
 import { MyDialogComponent } from './my-dialog/my-dialog.component';
 import { ToolTipDemoComponent } from './tool-tip-demo/tool-tip-demo.component';
 import { SnackbarDemoComponent } from './snackbar-demo/snackbar-demo.component';
+import { MenudemoComponent } from './menudemo/menudemo.component';
+import { SidenavdemoComponent } from './sidenavdemo/sidenavdemo.component';
+import { ToolbardemoComponent } from './toolbardemo/toolbardemo.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,10 @@ import { SnackbarDemoComponent } from './snackbar-demo/snackbar-demo.component';
     DialogDemoComponent,
     MyDialogComponent,
     ToolTipDemoComponent,
-    SnackbarDemoComponent
+    SnackbarDemoComponent,
+    MenudemoComponent,
+    SidenavdemoComponent,
+    ToolbardemoComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +42,11 @@ import { SnackbarDemoComponent } from './snackbar-demo/snackbar-demo.component';
     MatButtonModule,
     MatDialogModule,
     MatTooltipModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatMenuModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   entryComponents: [
     MyDialogComponent
